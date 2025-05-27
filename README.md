@@ -1,29 +1,42 @@
 # 🏦 Bank Marketing Decision Tree Classifier
 
-This project builds a **Decision Tree Classifier** to predict whether a customer will subscribe to a term deposit based on their demographic and behavioral data. The dataset is taken from the **Bank Marketing Dataset** provided by the [UCI Machine Learning Repository]
+## 📌 Overview
 
-## 📁 Dataset
+This project focuses on building a **Decision Tree Classifier** using a real-world dataset from a Portuguese bank's direct marketing campaign. The goal is to analyze customer information and predict whether a client will subscribe to a term deposit based on various socio-economic attributes and historical marketing interaction data.
 
-* **File Used:** `bank-full.csv`
-* **Source:** UCI Machine Learning Repository
-* **Separator:** `;` (semicolon)
-* **Encoding:** `latin1` (to handle special characters in names or job titles)
-  
-## 🛠️ Tools & Libraries
+---
 
-* Python 🐍
-* pandas
-* matplotlib
-* scikit-learn (sklearn)
+## 🎯 Objectives
 
-## 📌 Problem Statement
+* Predict if a customer will subscribe to a term deposit (`y` = yes or no).
+* Understand the most influential features affecting a customer's decision.
+* Visualize the decision-making process using a Decision Tree.
+* Practice data preprocessing, one-hot encoding, model training, and evaluation using scikit-learn.
 
-**Objective:** Predict if a customer will purchase a term deposit (target: `y`) based on features like:
+---
 
-* Age
-* Job
-* Marital status
-* Education
-* Loan status
-* Contact duration
-* Previous campaign outcomes
+## 🌟 Key Features
+
+* Loads and processes the `bank-full.csv` dataset.
+* Converts categorical features using **one-hot encoding**.
+* Transforms the target variable `y` to binary for classification.
+* Splits the dataset into training and test sets.
+* Trains a **Decision Tree Classifier** (`sklearn.tree.DecisionTreeClassifier`).
+* Evaluates the model using:
+
+  * Accuracy Score
+  * Classification Report
+  * Confusion Matrix
+* Visualizes the trained decision tree using `matplotlib`.
+
+---
+
+## 💻 Technologies Used
+
+| Technology                     | Purpose                            |
+| ------------------------------ | ---------------------------------- |
+| **Python**                     | Programming language               |
+| **Pandas**                     | Data loading and preprocessing     |
+| **Matplotlib**                 | Visualization of the decision tree |
+| **scikit-learn (sklearn)**     | Model building and evaluation      |
+| **Jupyter Notebook / VS Code** | Development environment            |
